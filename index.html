@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JavaScript Snake Game</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+
+<body>
+  <div id="scoreBoard">Score: 0</div>
+
+  <div id="resumePopup">
+    <div id="about" class="hidden"></div>
+    <div id="education" class="hidden"></div>
+    <div id="skills" class="hidden"></div>
+    <div id="projects" class="hidden"></div>
+    <div id="contact" class="hidden"></div>
+  </div>
+
+  <div class="controls">
+    Speed: <input type="number" id="gameSpeed" value="5" min="1" max="9" step="1" />
+    <input type="button" value="Start" id="gameStart" />
+  </div>
+
+  <canvas id="gameArea"></canvas>
+  <div id="resumePopup">
+  <div id="about" class="resume-section hidden"></div>
+  <div id="education" class="resume-section hidden"></div>
+  <div id="skills" class="resume-section hidden"></div>
+  <div id="projects" class="resume-section hidden"></div>
+  <div id="contact" class="resume-section hidden"></div>
+</div>
+
+  <!-- 🧩 Resume Sidebar -->
+<div id="resumeSidebar" class="resume-sidebar hidden">
+  <h2>My Gamified Resume</h2>
+  <div id="resumeSections">
+    <!-- Sections will be added dynamically -->
+  </div>
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+#gameArea {
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 15px #00fff2;
+  border-radius: 8px;
+}
+
+#scoreBoard {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #00fff2;
+}
+
+.controls {
+  margin: 10px;
+}
+
+#resumePopup {
+  margin-top: 15px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+#resumePopup div {
+  margin: 10px 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#resumePopup div.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  display: none;
+}
+/* 🧩 Resume Sidebar */
+.resume-sidebar {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  width: 260px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.6s ease;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.resume-sidebar.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.resume-sidebar h2 {
+  font-size: 1.3em;
+  color: #ffeb3b;
+  margin-bottom: 10px;
+  text-align: center;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  padding-bottom: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.resume-section {
+  margin: 12px 0;
+  padding: 10px;
+  background: rgba(255,255,255,0.1);
+  border-left: 4px solid #ffeb3b;
+  border-radius: 8px;
+  animation: slideIn 0.8s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.resume-section h3 {
+  margin: 0 0 5px;
+  font-size: 1.1em;
+  color: #00eaff;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.resume-section p {
+  font-size: 0.9em;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
